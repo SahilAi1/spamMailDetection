@@ -1,6 +1,13 @@
 # Spam Mail Detection System
 
-An end-to-end, production-minded machine learning system for detecting email spam. Recreated using **Python 3.11**, **Scikit-Learn**, and **Streamlit**, this project features a reproducible text preprocessing and classification pipeline, transparent evaluation metrics on a held-out test set, and an interactive web application ready for deployment to **Streamlit Community Cloud**.
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://spammaildetection-a8t2xyymf53too4hcqwq8j.streamlit.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-SahilAi1%2FspamMailDetection-blue?logo=github)](https://github.com/SahilAi1/spamMailDetection)
+[![Python 3.11](https://img.shields.io/badge/Python-3.11-brightgreen.svg)](https://www.python.org/downloads/release/python-3110/)
+[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.9+-orange.svg)](https://scikit-learn.org/)
+
+> 🚀 **Live Demo:** Access the deployed web application at **[https://spammaildetection-a8t2xyymf53too4hcqwq8j.streamlit.app/](https://spammaildetection-a8t2xyymf53too4hcqwq8j.streamlit.app/)**
+
+An end-to-end, production-minded machine learning system for detecting email spam. Recreated using **Python 3.11**, **Scikit-Learn**, and **Streamlit**, this project features a reproducible text preprocessing and classification pipeline, transparent evaluation metrics on a held-out test set, and an interactive web application deployed on **Streamlit Community Cloud**.
 
 ---
 
@@ -311,7 +318,8 @@ Follow these steps to deploy the application for free to **Streamlit Community C
 
 1. Click **"Deploy!"**.
 2. Streamlit Cloud will install dependencies from `requirements.txt` and launch the app.
-3. Once the build finishes, your app will be live with a public URL (e.g. `https://<your-app-name>.streamlit.app`).
+3. Once the build finishes, your app is live at:
+   👉 **[https://spammaildetection-a8t2xyymf53too4hcqwq8j.streamlit.app/](https://spammaildetection-a8t2xyymf53too4hcqwq8j.streamlit.app/)**
 4. Test with preset samples to verify predictions and probability scores.
 
 ---
