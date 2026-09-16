@@ -13,7 +13,6 @@ An end-to-end, production-minded machine learning system for detecting email spa
 - [Evaluation & Transparent Metrics](#evaluation--transparent-metrics)
   - [Understanding the Metrics](#understanding-the-metrics)
   - [Held-Out Test Results](#held-out-test-results)
-  - [Why Results Differ from the Original ~98% Academic Claim](#why-results-differ-from-the-original-98-academic-claim)
 - [Project Directory Structure](#project-directory-structure)
 - [Local Installation & Execution](#local-installation--execution)
   - [macOS and Linux](#macos-and-linux)
@@ -140,20 +139,6 @@ The model was evaluated on a held-out test set (20% stratified split, `random_st
 | **Actual Legitimate (Ham)** | **667** (True Negatives) | **40** (False Positives) |
 | **Actual Spam** | **9** (False Negatives) | **283** (True Positives) |
 
----
-
-### Why Results Differ from the Original ~98% Academic Claim
-
-In many introductory academic projects, ~98% accuracy is frequently cited for Naive Bayes spam classification. Transparently examining our 95.10% result reveals several clear technical reasons:
-
-1. **Dataset Differences (Email vs. SMS)**:
-   Many academic projects achieve ~98.5% on the **SMS Spam Collection** dataset. SMS messages are brief (under 160 characters) and feature dense, highly repetitive spam triggers (`FREE`, `WIN`, `CALL NOW`). In contrast, the **Enron Email Corpus** consists of full-length corporate emails with complex conversational text, technical jargon, meeting notes, and varied vocabulary, making classification more challenging and realistic.
-2. **Deduplication and Data Leakage**:
-   The raw Enron dataset contains 178 duplicate messages. In standard classroom tutorials, train/test splits are often performed *without* deduplication. When identical emails exist in both train and test splits, the model memorizes test samples, artificially inflating accuracy scores to 97–98%. By deduplicating first, our evaluation strictly measures true generalization.
-3. **Preprocessing & Feature Representation**:
-   Differences in tokenization (handling numbers, email addresses, and punctuation), vocabulary size thresholds, and whether stopwords are filtered impact the precision-recall balance.
-4. **Hyperparameter Tuning & Thresholding**:
-   Our model uses Laplace smoothing $\alpha=0.1$, which prioritizes high spam recall (96.92%) so that almost no spam reaches the inbox. Increasing $\alpha$ or adjusting decision thresholds shifts the balance toward higher precision at the expense of recall.
 
 ---
 
