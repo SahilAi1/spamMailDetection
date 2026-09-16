@@ -185,8 +185,8 @@ spamMailDetection/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/<your-username>/spam-mail-detection.git
-   cd spam-mail-detection
+   git clone https://github.com/SahilAi1/spamMailDetection.git
+   cd spamMailDetection
    ```
 
 2. **Create and activate a virtual environment (Python 3.11 recommended)**:
@@ -217,8 +217,8 @@ spamMailDetection/
 
 1. **Clone the repository**:
    ```powershell
-   git clone https://github.com/<your-username>/spam-mail-detection.git
-   cd spam-mail-detection
+   git clone https://github.com/SahilAi1/spamMailDetection.git
+   cd spamMailDetection
    ```
 
 2. **Create and activate a virtual environment**:
@@ -281,7 +281,7 @@ Follow these steps to deploy the application for free to **Streamlit Community C
 3. Link your remote repository and push to the `main` branch:
    ```bash
    git branch -M main
-   git remote add origin https://github.com/<your-username>/spam-mail-detection.git
+   git remote add origin https://github.com/SahilAi1/spamMailDetection.git
    git push -u origin main
    ```
    > **Note on Model Size**: The trained model artifact (`models/spam_classifier.joblib`) is approximately **693 KB**, well below GitHub's 100 MB file limit. You can safely commit and push it directly without Git LFS.
@@ -299,7 +299,7 @@ Follow these steps to deploy the application for free to **Streamlit Community C
 
 1. Click the **"New app"** button in your Streamlit Cloud workspace.
 2. Configure the deployment settings:
-   - **Repository**: `<your-username>/spam-mail-detection`
+   - **Repository**: `SahilAi1/spamMailDetection`
    - **Branch**: `main`
    - **Main file path**: `app.py`
 3. Click **"Advanced settings"** (optional):
