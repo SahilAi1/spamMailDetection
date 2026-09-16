@@ -29,3 +29,10 @@ Thumbs.db
 # Scratch and checkpoint files
 .ipynb_checkpoints/
 scratch/
+
+# Internal documentation & interview guide
+docs/
+
+# Agent configuration directories
+.agents/
+.claude/
