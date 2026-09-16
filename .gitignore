@@ -1,0 +1,31 @@
+# Environments and virtualenvs
+.venv/
+env/
+venv/
+ENV/
+*.env
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# IDE and Editor configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Streamlit local config & secrets
+.streamlit/secrets.toml
+
+# Scratch and checkpoint files
+.ipynb_checkpoints/
+scratch/

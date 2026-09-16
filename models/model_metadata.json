@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-09-16T17:45:10.071161+00:00",
+  "dataset": {
+    "source_file": "spam_ham_dataset.csv",
+    "total_samples": 4991,
+    "train_samples": 3992,
+    "test_samples": 999,
+    "test_size": 0.2,
+    "random_state": 42
+  },
+  "model": {
+    "pipeline_steps": [
+      "tfidf",
+      "classifier"
+    ],
+    "vectorizer": "TfidfVectorizer",
+    "ngram_range": [
+      1,
+      2
+    ],
+    "max_features": 10000,
+    "classifier": "MultinomialNB",
+    "alpha": 0.1,
+    "vocabulary_size": 10000
+  },
+  "metrics": {
+    "accuracy": 0.950950950950951,
+    "spam_precision": 0.8761609907120743,
+    "spam_recall": 0.9691780821917808,
+    "spam_f1": 0.9203252032520325,
+    "ham_precision": 0.9866863905325444,
+    "ham_recall": 0.9434229137199435,
+    "ham_f1": 0.9645697758496024
+  },
+  "environment": {
+    "python_version": "3.11.16",
+    "sklearn_version": "1.9.1"
+  }
+}
